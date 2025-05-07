@@ -222,7 +222,11 @@
 
 
         //2---Seleccion aleatoria de pregunta
-        gerRandomIndex(arr);
+        function getRandomIndex(arr) {
+            return Math.floor(Math.random() * arr.length);
+        }
+        const preguntaleatoria = getRandomIndex(preguntasXML);
+        document.querySelector("#pregunta");
 
 
 
@@ -239,8 +243,8 @@
 
 
         //5----Mostrar la respuesta correcta o incorrecta
-        
-        
+
+
 
     </script>
 </body>
